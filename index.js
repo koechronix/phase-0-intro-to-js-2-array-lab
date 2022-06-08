@@ -31,10 +31,14 @@ function destructivelyRemoveFirstCat(){
     cats.shift();
 }
 function appendCat(name){
-    return [
-        name,
-        ...cats,
-    ]
+    let newArrray =[...cats ,name]
+    return newArrray
+    
+}
+function prependCat(name){
+    let newArrray =[name, ...cats]
+    return newArrray
+    
 }
 function removeLastCat(name){
     return cats.slice(0 ,2)
